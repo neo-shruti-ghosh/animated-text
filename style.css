@@ -1,0 +1,49 @@
+*{
+    background-color: black;
+}
+.banner {
+    color: white;
+    font-size: 30px;
+    width: 100%;
+    height: 800px;
+    display: inline-block;
+}
+
+#logo{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#logo path:nth-child(1){
+    stroke-dasharray: 545px;
+    stroke-dashoffset: 545px;
+    animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(2){
+    stroke-dasharray: 303px;
+    stroke-dashoffset: 303px;
+    animation: line-anim 2s ease forwards .3s;
+}
+#logo path:nth-child(3){
+    stroke-dasharray: 439px;
+    stroke-dashoffset: 439px;
+    animation: line-anim 2s ease forwards .6s;
+}
+#logo path:nth-child(4){
+    stroke-dasharray: 526px;
+    stroke-dashoffset: 526px;
+    animation: line-anim 2s ease forwards .9s;
+}
+#logo path:nth-child(5){
+    stroke-dasharray: 525px;
+    stroke-dashoffset: 525px;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
